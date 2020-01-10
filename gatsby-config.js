@@ -31,6 +31,15 @@ module.exports = {
             name:'images',
             path:'images',
         }
+    },
+    {
+        resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+        options:{
+            production: true,
+            disable: !process.env.ANALIZE_BUNDLE_SIZE,
+            generateStatsFile: true,
+            analizeMode: 'static'
+        }
     }
     ]
 };

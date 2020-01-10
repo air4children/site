@@ -25,3 +25,4 @@ This is a Gatsby.js web development. In order to run this code you have to insta
 1. `npm i gatsby-transformer-sharp gatsby-plugin-sharp gatsby-background-image`
 1. `npm i gatsby-image`
 1. `npm i gatsby-remark-images`
+1. `npm i gatsby-plugin-webpack-bundle-analyzer`
