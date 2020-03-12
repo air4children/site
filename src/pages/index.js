@@ -7,7 +7,12 @@ export default () => {
         <>
             <Hero/>
             <Layout>
-                content here please
+                <l1>Welcome to LibreRobotics</l1>
+
+                <p>make boxes components here</p>
+
+
+
             </Layout>
         </>
     );
