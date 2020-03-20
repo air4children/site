@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 
 const NavLink = styled(Link)`
-    color: #222;
+    color: #EEEEEE;
     font-size: 1rem;
     font-weight: ${props => props.fontWeight || 'normal'};
     line-height: 1;
@@ -13,7 +13,7 @@ const NavLink = styled(Link)`
     text-decoration: none;
 
     &.current-page {
-        border-bottom: 2px solid #222;
+        border-bottom: 2px solid #EEEEEE;
     }
 
     &:last-of-type{
@@ -24,14 +24,15 @@ const NavLink = styled(Link)`
 const Header = () => (
     <header
         css={ css`
-            background: #eee;
-            border-bottom: 1px solid #ddd;
+            background: #273746;
+            border-bottom: 3px solid #A900BD;
             display: flex;
             justify-content: space-between;
             padding: 0.5rem calc((100vw - 950px - 0.5rem)/2);
         ` }
         > 
-        <NavLink to="/" fontWeight="bold"> Libre Robotics</NavLink>
+        <NavLink to="/" fontWeight="bold"> Air4Children
+</NavLink>
 
         <nav css = { css`
             margin-top: 0; 
@@ -58,6 +59,9 @@ const Header = () => (
             </NavLink>
             <NavLink to="/donate/" activeClassName="current-page">
                 Donate
+            </NavLink>
+            <NavLink to="/contact/" activeClassName="current-page">
+                Contact Us
             </NavLink>
         </nav>
     </header>

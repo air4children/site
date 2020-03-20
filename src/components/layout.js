@@ -2,6 +2,8 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
 import Header from './header';
+import Footer from './footer';
+import Hero from '../components/hero'; 
 import useSiteMetadata from '../hooks/use-sitemetadata'
 
 const Layout = ({ children }) => {
@@ -14,15 +16,12 @@ const Layout = ({ children }) => {
                     box-sizing: border-box;
                 }
 
-                * + * {
-                    margin-top: 1rem;
-                }
 
                 html, 
                 body {
                     margin: 0;
                     color: #555;
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                    font-family: Helvetica, sans-serif;
                     font-size: 18px;
                     line-height: 1.4;
                 
@@ -62,6 +61,7 @@ const Layout = ({ children }) => {
                 <meta name="description" content={description}/>
             </Helmet>
             <Header />
+            <Hero/>
             <main
                 css={css`
                     margin: 2rem auto 4rem;
@@ -71,6 +71,7 @@ const Layout = ({ children }) => {
             >
             {children}
             </main>
+            <Footer />
         </>
     );
 }

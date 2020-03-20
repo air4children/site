@@ -1,18 +1,21 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Hero from '../components/hero'; 
+import Box from '../components/box';
 
 export default () => {
     return (
         <>
-            <Hero/>
+            {/* <Hero/> */}
             <Layout>
                 <l1>Welcome to LibreRobotics</l1>
-
-                <p>make boxes components here</p>
-
-
-
+                <Box>
+                    <h2>What is Lorem Ipsum?</h2>                   
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </Box>
+                
             </Layout>
         </>
     );
