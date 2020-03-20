@@ -8,13 +8,29 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
+        "gatsby-transformer-remark",
+        "gatsby-remark-embed-youtube",
     {
         resolve: 'gatsby-plugin-mdx',
         options: {
             defaultLayouts : {
                 default: require.resolve('./src/components/layout.js')
             },
-            gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
+            gatsbyRemarkPlugins: [
+                { 
+                    resolve: 'gatsby-remark-images' 
+                },
+                {
+                resolve: "gatsby-remark-embed-youtube",
+                options: {
+                    width: 950,
+                    //ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+                    height: 400, // Optional: Overrides optional.ratio
+                    related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+                    noIframeBorder: true //Optional: Disable insertion of <style> border: 0
+                    }
+                }
+            ],
             plugins: [{ resolve: 'gatsby-remark-images' }],
         }
     },
@@ -40,6 +56,20 @@ module.exports = {
             generateStatsFile: true,
             analizeMode: 'static'
         }
-    }
+    },
+    {
+        resolve: "gatsby-transformer-remark",
+        options: {
+          plugins: [
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400
+            }
+          }
+          ]
+        }
+      }
     ]
 };
