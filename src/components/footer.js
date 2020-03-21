@@ -26,6 +26,7 @@ const Footer = () => (
         css={ css`
             background: #273746;
             border-top: 3px solid #A900BD;
+            border-bottom: 3px solid #FFFFFF;
             display: flex;
             justify-content: space-between;
             padding: 0.5rem calc((100vw - 950px - 0.5rem)/2);
@@ -37,8 +38,8 @@ const Footer = () => (
             margin-top: 0; 
         ` }
         >
-            <NavLink to="/" activeClassName="current-page">
-                Home
+            <NavLink to="/team/" activeClassName="current-page">
+                Meet the team
             </NavLink>
         </nav>
     </footer>

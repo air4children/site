@@ -38,10 +38,9 @@ const Header = () => (
             margin-top: 0; 
         ` }
         >
-
-            <NavLink to="/" activeClassName="current-page">
+            {/* <NavLink to="/" activeClassName="current-page">
                 Home
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/about/" activeClassName="current-page">
                 About
             </NavLink>
@@ -51,12 +50,12 @@ const Header = () => (
             <NavLink to="/volunteering/" activeClassName="current-page">
                 Volunteering
             </NavLink>
-            <NavLink to="/blog/" activeClassName="current-page">
+            {/* <NavLink to="/blog/" activeClassName="current-page">
                 Blog
-            </NavLink>
-            <NavLink to="/github" activeClassName="current-page">
+            </NavLink> */}
+            {/* <NavLink to="/github" activeClassName="current-page">
                 Github
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/donate/" activeClassName="current-page">
                 Donate
             </NavLink>

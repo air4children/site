@@ -1,21 +1,26 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
-import Hero from '../components/hero'; 
 import Box from '../components/box';
+import usePosts from '../hooks/use-posts';
+import PostPreview from '../components/post-preview';
 
 export default () => {
+    
+    const posts = usePosts(); 
+
     return (
         <>
-            {/* <Hero/> */}
             <Layout>
-                <l1>Welcome to LibreRobotics</l1>
                 <Box>
-                    <h2>What is Lorem Ipsum?</h2>                   
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                    <h2>Cocinando Robots (Verano 2015)</h2>
+                    <p>Our aim is to create the first Summer Workshop in 2015 of LibrE Robotics in Xicohtzinco, Tlaxcala, Mexico. Children between 10 and 15 years old will be invited to participate in a week full of activities that are going to be  thoughtfully designed for finding delightfulness in the robotics field.</p>
+                    <p>We are working on the logistic, evaluating material, creating activities, organizing the project's timeline, selecting mentors, and getting sponsorship.</p>
                 </Box>
-                
+                <h2>Most recent new from air4children</h2>
+                {posts.map(post => (
+                            <PostPreview key={post.slug} post={post}/>
+                ))}
             </Layout>
         </>
     );
