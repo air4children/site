@@ -21,9 +21,10 @@ const Layout = ({ children }) => {
                 body {
                     margin: 0;
                     color: #555;
-                    font-family: Helvetica, sans-serif;
+                    font-family: Gill Sans Extrabold, Helvetica, sans-serif;
                     font-size: 18px;
-                    line-height: 1.4;
+                    line-height: 1.8;
+                    word-spacing: 4px;
                 
 
                     > div {

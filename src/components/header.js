@@ -29,10 +29,10 @@ const Header = () => (
             display: flex;
             justify-content: space-between;
             padding: 0.5rem calc((100vw - 950px - 0.5rem)/2);
+            height:80px
         ` }
         > 
-        <NavLink to="/" fontWeight="bold"> Air4Children
-</NavLink>
+        <NavLink to="/" fontWeight="bold"> Air4Children</NavLink>
 
         <nav css = { css`
             margin-top: 0; 

@@ -30,6 +30,7 @@ const Footer = () => (
             display: flex;
             justify-content: space-between;
             padding: 0.5rem calc((100vw - 950px - 0.5rem)/2);
+            height:200px
         ` }
         > 
         <NavLink to="/" fontWeight="bold"> Air4Children </NavLink>

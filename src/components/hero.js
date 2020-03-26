@@ -9,8 +9,8 @@ const Front = styled ('div')`
     background: #273746;
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    height: 100%;
+    align-content: center;
+    align-items: center
     width: 100%;
     padding: 0 calc((100vw - 950px) / 2 ) 2rem;
 `;
