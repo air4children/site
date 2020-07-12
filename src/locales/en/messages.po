@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#: src/components/header.es.js:66
+#: src/components/header.js:66
+msgid "About"
+msgstr "About"
+
+#: src/components/header.es.js:57
+#: src/components/header.js:57
+msgid "Air4Children"
+msgstr "Air4Children"
+
+#: src/pages/contact.en.js:24
+msgid "Also, you can create an issue in any of the repositories in  https://github.com/air4children."
+msgstr "Also, you can create an issue in any of the repositories in  https://github.com/air4children."
+
+#: src/components/header.es.js:78
+#: src/components/header.js:78
+#: src/pages/contact.en.js:16
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: src/components/header.es.js:75
+#: src/components/header.js:75
+msgid "Donate"
+msgstr "Donate"
+
+#: src/pages/about.en.js:39
+msgid "For further information, you can read the complete documentation at"
+msgstr "For further information, you can read the complete documentation at"
+
+#: src/pages/contact.en.js:19
+msgid "If you have any questions about becoming a collaborator, volunteer, mentor, sponsor, or anything else, do not hesitate to mail us to `robotics.libre@gmail.com`."
+msgstr "If you have any questions about becoming a collaborator, volunteer, mentor, sponsor, or anything else, do not hesitate to mail us to `robotics.libre@gmail.com`."
+
+#: src/pages/about.en.js:36
+msgid "Libre software offers scientists the possibility of sharing with their peers how they have solved problems. This, of course is basic for the evolution of science; but libre software goes beyond that and makes this happen in a cost-effective way.*"
+msgstr "Libre software offers scientists the possibility of sharing with their peers how they have solved problems. This, of course is basic for the evolution of science; but libre software goes beyond that and makes this happen in a cost-effective way.*"
+
+#: src/pages/index.en.js:36
+msgid "Most recent new from air4children"
+msgstr "Most recent new from air4children"
+
+#: src/pages/index.es.js:36
+msgid "Most recent news from air4children"
+msgstr "Most recent news from air4children"
+
+#: src/pages/index.en.js:22
+#: src/pages/index.es.js:22
+msgid "Our aim is to create the first Summer Workshop in 2015 of LibrE Robotics in Xicohtzinco, Tlaxcala, Mexico. Children between 10 and 15 years old will be invited to participate in a week full of activities that are going to be thoughtfully designed for finding delightfulness in the robotics field."
+msgstr "Our aim is to create the first Summer Workshop in 2015 of LibrE Robotics in Xicohtzinco, Tlaxcala, Mexico. Children between 10 and 15 years old will be invited to participate in a week full of activities that are going to be thoughtfully designed for finding delightfulness in the robotics field."
+
+#: src/pages/about.en.js:42
+msgid "References:"
+msgstr "References:"
+
+#: src/pages/index.en.js:20
+#: src/pages/index.es.js:20
+msgid "Robots (summer 2015)"
+msgstr "Robots (summer 2015)"
+
+#: src/components/header.es.js:69
+#: src/components/header.js:69
+msgid "Videos"
+msgstr "Videos"
+
+#: src/components/header.es.js:72
+#: src/components/header.js:72
+msgid "Volunteering"
+msgstr "Volunteering"
+
+#: src/pages/index.en.js:29
+#: src/pages/index.es.js:29
+msgid "We are working on the logistic, evaluating material, creating activities, organizing the project's timeline, selecting mentors, and getting sponsorship."
+msgstr "We are working on the logistic, evaluating material, creating activities, organizing the project's timeline, selecting mentors, and getting sponsorship."
+
+#: src/pages/about.en.js:14
+msgid "What is air4children ?"
+msgstr "What is air4children ?"
+
+#: src/pages/about.en.js:17
+msgid "air4children is inspired by KHAN academy which is a non-profit organization with the goal of changing education for the better. In the same fashion, LibrE Robotics has also been thought to be a non-profit organization in which the main goals are fivefold:"
+msgstr "air4children is inspired by KHAN academy which is a non-profit organization with the goal of changing education for the better. In the same fashion, LibrE Robotics has also been thought to be a non-profit organization in which the main goals are fivefold:"
+
+#: src/pages/about.en.js:31
+msgid "air4children will provide software and hardware for educational robots that are extremely reliable (robust), modifiable, and very cheap in order to be accessible to anyone and to enable a much more rapid development of the community. In addition to that, **air4children** has been adopted the philosophy of free software foundation, since free and open-source software and hardware licences state that anyone is freely licensed to use, copy, study and change in any way, and the source code is openly shared so that users are encouraged to voluntarily improve the design of the software. Meyer said:"
+msgstr "air4children will provide software and hardware for educational robots that are extremely reliable (robust), modifiable, and very cheap in order to be accessible to anyone and to enable a much more rapid development of the community. In addition to that, **air4children** has been adopted the philosophy of free software foundation, since free and open-source software and hardware licences state that anyone is freely licensed to use, copy, study and change in any way, and the source code is openly shared so that users are encouraged to voluntarily improve the design of the software. Meyer said:"
+
+#: src/components/header.es.js:81
+#: src/components/header.js:81
+msgid "en"
+msgstr "en"
+
+#: src/components/header.es.js:84
+#: src/components/header.js:84
+msgid "es"
+msgstr "es"
+
+#: src/pages/about.en.js:22
+msgid "to contribute to the development of a free world-class education in Robotics for anyone anywhere;"
+msgstr "to contribute to the development of a free world-class education in Robotics for anyone anywhere;"
+
+#: src/pages/about.en.js:26
+msgid "to design and build environments where participants can discover and develop their own capabilities."
+msgstr "to design and build environments where participants can discover and develop their own capabilities."
+
+#: src/pages/about.en.js:23
+msgid "to design and build low-cost robots with high standards of quality;"
+msgstr "to design and build low-cost robots with high standards of quality;"
+
+#: src/pages/about.en.js:25
+msgid "to design free access material in educational Robotics, and develop activities where organization and cooperation of the participants can foster possible solutions for environmental, social and healthcare issues; and"
+msgstr "to design free access material in educational Robotics, and develop activities where organization and cooperation of the participants can foster possible solutions for environmental, social and healthcare issues; and"
+
+#: src/pages/about.en.js:24
+msgid "to improve current open source software projects so as to be more approachable by inexperienced users;"
+msgstr "to improve current open source software projects so as to be more approachable by inexperienced users;"
