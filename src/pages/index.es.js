@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
+import Layout from "../components/layout.es";
 import Box from "../components/box";
 import usePosts from "../hooks/use-posts";
 import PostPreview from "../components/post-preview";

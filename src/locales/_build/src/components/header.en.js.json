@@ -2,7 +2,7 @@
   "Air4Children": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         57
       ]
     ]
@@ -10,7 +10,7 @@
   "About": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         66
       ]
     ]
@@ -18,7 +18,7 @@
   "Videos": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         69
       ]
     ]
@@ -26,7 +26,7 @@
   "Volunteering": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         72
       ]
     ]
@@ -34,7 +34,7 @@
   "Donate": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         75
       ]
     ]
@@ -42,7 +42,7 @@
   "Contact Us": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         78
       ]
     ]
@@ -50,7 +50,7 @@
   "en": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         81
       ]
     ]
@@ -58,7 +58,7 @@
   "es": {
     "origin": [
       [
-        "src/components/header.js",
+        "src/components/header.en.js",
         84
       ]
     ]
