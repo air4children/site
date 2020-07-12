@@ -1,8 +1,8 @@
-import React from 'react';
-import { css } from '@emotion/core';
-import { Link } from 'gatsby';
-import Image from 'gatsby-image';
-import ReadLink from '../components/read-link';
+import React from "react";
+import { css } from "@emotion/core";
+import { Link } from "gatsby";
+import Image from "gatsby-image";
+import ReadLink from "../components/read-link";
 
 const PostPreview = ({ post }) => (
   <article
@@ -11,7 +11,7 @@ const PostPreview = ({ post }) => (
       display: flex;
       margin-top: 0;
       padding-bottom: 1rem;
-      
+
       :first-of-type {
         margin-top: 1rem;
       }

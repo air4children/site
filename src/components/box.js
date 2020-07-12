@@ -3,7 +3,12 @@ import styled from '@emotion/styled';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 const TextBox = styled ('div')`
-    background-image: linear-gradient(to top, #ddbbffdd 2rem, #FFFFFF);
+    #background-image: linear-gradient(to top, #ddbbffdd 2rem, #FFFFFF);
+    #background: #1f4f73;
+    border: 6px solid #708CA1;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     height: 100%;

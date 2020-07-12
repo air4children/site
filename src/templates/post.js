@@ -15,7 +15,7 @@ export const query = graphql`
             body
         }
     }
-`; 
+`;
 
 const PostTemplate = ({ data: { mdx: post } }) => (
     <Layout>

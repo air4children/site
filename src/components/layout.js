@@ -3,29 +3,29 @@ import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
-import Hero from '../components/hero'; 
+import Hero from '../components/hero';
 import useSiteMetadata from '../hooks/use-sitemetadata'
 
 const Layout = ({ children }) => {
-    const { title, description } =  useSiteMetadata(); 
+    const { title, description } =  useSiteMetadata();
     return (
         <>
-            <Global 
+            <Global
                 styles = {css`
                 * {
                     box-sizing: border-box;
                 }
 
 
-                html, 
+                html,
                 body {
                     margin: 0;
                     color: #555;
-                    font-family: Gill Sans Extrabold, Helvetica, sans-serif;
-                    font-size: 18px;
+                    font-family: 'Balsamiq Sans', cursive;
+                    font-size: 20px;
                     line-height: 1.8;
                     word-spacing: 4px;
-                
+
 
                     > div {
                         margin-top:0;
@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
 
                     }
                 }
-                `} 
+                `}
             />
             <Helmet>
                 <html lang='en'/>
@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
                 <meta name="description" content={description}/>
             </Helmet>
             <Header />
-            <Hero/>
+
             <main
                 css={css`
                     margin: 2rem auto 4rem;

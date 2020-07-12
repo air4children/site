@@ -6,7 +6,7 @@ import Image from 'gatsby-image';
 
 const Front = styled ('div')`
     #background-image: linear-gradient(to top, #ddbbffdd 2rem, #38384B);
-    background: #273746;
+    background: #708CA1;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -73,7 +73,6 @@ const Hero = () => {
                 />
             </Link>
             <TextBox>
-                <h1>Air4Children</h1>
                 <p>
                     Welcome to <b>Air4Children</b>  <Link to="/about/">Learn more &rarr;</Link>
                 </p>

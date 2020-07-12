@@ -40,7 +40,7 @@ const Header = () => {
   `);
 
   return (
-    <I18nProvider language="en" catalogs={{ en: catalogEN, es: catalogES }}>
+    <I18nProvider language="es" catalogs={{ en: catalogEN, es: catalogES }}>
       <header
         css={css`
           background: #1f4f73;
@@ -52,7 +52,7 @@ const Header = () => {
           font-family: "Balsamiq Sans", cursive;
         `}
       >
-        <NavLink to="/en/" fontWeight="bold">
+        <NavLink to="/es/" fontWeight="bold">
           {" "}
           <Trans>Air4Children</Trans>
         </NavLink>
@@ -62,19 +62,19 @@ const Header = () => {
             margin-top: 0;
           `}
         >
-          <NavLink to="/en/about/" activeClassName="current-page">
+          <NavLink to="/es/about/" activeClassName="current-page">
             <Trans>About</Trans>
           </NavLink>
-          <NavLink to="/videos/" activeClassName="current-page">
+          <NavLink to="/es/videos/" activeClassName="current-page">
             <Trans>Videos</Trans>
           </NavLink>
-          <NavLink to="/volunteering/" activeClassName="current-page">
+          <NavLink to="/es/volunteering/" activeClassName="current-page">
             <Trans>Volunteering</Trans>
           </NavLink>
-          <NavLink to="/donate/" activeClassName="current-page">
+          <NavLink to="/es/donate/" activeClassName="current-page">
             <Trans>Donate</Trans>
           </NavLink>
-          <NavLink to="/en/contact/" activeClassName="current-page">
+          <NavLink to="/es/contact/" activeClassName="current-page">
             <Trans>Contact Us</Trans>
           </NavLink>
           <NavLink to="/en/" activeClassName="current-page">
