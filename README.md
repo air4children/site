@@ -5,8 +5,10 @@
 This website made usage of [Node.js](https://nodejs.org/en/), npm and [Gatsby.js](https://www.gatsbyjs.org/) and other open-sourced software tools.
 
 ## Prerequisites
+1. Have a linux distribution. These instructions work fine for Ubuntu 20.04 but for Windows or Mac it should be the same with slight variations when installing the prerequisites
 1. Install `node` and `npm`
-1. Install `gatsby`
+  * `sudo apt install npm`
+  * `npm -v` or `npm –version`
 1. Install Gatsby CLI (gatsby-cli) installed globally by running:
    `npm install -g gatsby-cli`
 1. Clone this repository   
