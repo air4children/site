@@ -47,19 +47,11 @@
       ]
     ]
   },
-  "en": {
-    "origin": [
-      [
-        "src/components/header.en.js",
-        81
-      ]
-    ]
-  },
   "es": {
     "origin": [
       [
         "src/components/header.en.js",
-        84
+        81
       ]
     ]
   }

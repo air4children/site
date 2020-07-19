@@ -124,13 +124,11 @@ msgstr "back to home"
 msgid "can donate here"
 msgstr "can donate here"
 
-#: src/components/header.en.js:81
 #: src/components/header.es.js:81
 msgid "en"
 msgstr "en"
 
-#: src/components/header.en.js:84
-#: src/components/header.es.js:84
+#: src/components/header.en.js:81
 msgid "es"
 msgstr "es"
 

@@ -80,9 +80,6 @@ const Header = () => {
           <NavLink to="/en/" activeClassName="current-page">
             <Trans>en</Trans>
           </NavLink>
-          <NavLink to="/es/" activeClassName="current-page">
-            <Trans>es</Trans>
-          </NavLink>
         </nav>
       </header>
     </I18nProvider>

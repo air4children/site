@@ -65,20 +65,17 @@ const Header = () => {
           <NavLink to="/en/about/" activeClassName="current-page">
             <Trans>About</Trans>
           </NavLink>
-          <NavLink to="/videos/" activeClassName="current-page">
+          <NavLink to="/en/videos/" activeClassName="current-page">
             <Trans>Videos</Trans>
           </NavLink>
-          <NavLink to="/volunteering/" activeClassName="current-page">
+          <NavLink to="/en/volunteering/" activeClassName="current-page">
             <Trans>Volunteering</Trans>
           </NavLink>
-          <NavLink to="/donate/" activeClassName="current-page">
+          <NavLink to="/en/donate/" activeClassName="current-page">
             <Trans>Donate</Trans>
           </NavLink>
           <NavLink to="/en/contact/" activeClassName="current-page">
             <Trans>Contact Us</Trans>
-          </NavLink>
-          <NavLink to="/en/" activeClassName="current-page">
-            <Trans>en</Trans>
           </NavLink>
           <NavLink to="/es/" activeClassName="current-page">
             <Trans>es</Trans>
