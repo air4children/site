@@ -1,0 +1,26 @@
+{
+  "Donate": {
+    "origin": [
+      [
+        "src/pages/donate.es.js",
+        12
+      ]
+    ]
+  },
+  "can donate here": {
+    "origin": [
+      [
+        "src/pages/donate.es.js",
+        13
+      ]
+    ]
+  },
+  "back to home": {
+    "origin": [
+      [
+        "src/pages/donate.es.js",
+        14
+      ]
+    ]
+  }
+}

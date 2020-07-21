@@ -1,0 +1,58 @@
+{
+  "Air4Children": {
+    "origin": [
+      [
+        "src/components/header.es.js",
+        57
+      ]
+    ]
+  },
+  "About": {
+    "origin": [
+      [
+        "src/components/header.es.js",
+        66
+      ]
+    ]
+  },
+  "Videos": {
+    "origin": [
+      [
+        "src/components/header.es.js",
+        69
+      ]
+    ]
+  },
+  "Volunteering": {
+    "origin": [
+      [
+        "src/components/header.es.js",
+        72
+      ]
+    ]
+  },
+  "Donate": {
+    "origin": [
+      [
+        "src/components/header.es.js",
+        75
+      ]
+    ]
+  },
+  "Contact Us": {
+    "origin": [
+      [
+        "src/components/header.es.js",
+        78
+      ]
+    ]
+  },
+  "en": {
+    "origin": [
+      [
+        "src/components/header.es.js",
+        81
+      ]
+    ]
+  }
+}

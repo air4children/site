@@ -1,0 +1,18 @@
+{
+  "Entry blog posts": {
+    "origin": [
+      [
+        "src/pages/blog.es.js",
+        19
+      ]
+    ]
+  },
+  "back to home": {
+    "origin": [
+      [
+        "src/pages/blog.es.js",
+        20
+      ]
+    ]
+  }
+}

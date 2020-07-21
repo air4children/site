@@ -1,9 +1,8 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
-import Header from './header.en';
+import Header from './header.es';
 import Footer from './footer.es';
-import Hero from '../components/hero';
 import useSiteMetadata from '../hooks/use-sitemetadata'
 
 const Layout = ({ children }) => {

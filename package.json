@@ -1,5 +1,5 @@
 {
-  "name": "libre-robotics-gatsby",
+  "name": "air4children-gatsby",
   "private": true,
   "description": "libre robotics starter",
   "version": "0.0.1",
@@ -11,18 +11,25 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "analize":"cross-env ANALIZE_BUNDLE_SIZE=true gatsby build"
+    "analize": "cross-env ANALIZE_BUNDLE_SIZE=true gatsby build",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
+    "@lingui/react": "^2.9.1",
     "@mdx-js/mdx": "^1.5.3",
     "@mdx-js/react": "^1.5.3",
     "gatsby": "^2.18.6",
     "gatsby-background-image": "^0.9.12",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-emotion": "^4.1.18",
+    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-mdx": "^1.0.64",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sharp": "^2.3.10",
     "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
@@ -34,7 +41,15 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "@lingui/cli": "^2.9.1",
+    "@lingui/macro": "^2.9.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-preset-gatsby": "^0.4.7",
     "cross-env": "^6.0.3",
+    "gatsby-remark-embed-youtube": "0.0.7",
+    "gatsby-transformer-remark": "^2.6.59",
     "prettier": "^1.19.1"
   },
   "repository": {
