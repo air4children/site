@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Box from "../components/box";
 import usePosts from "../hooks/use-posts";
 import PostPreview from "../components/post-preview";
+import Hero from "../components/hero";
 import { Trans } from "@lingui/macro";
 import { I18nProvider } from "@lingui/react";
 import catalogEN from "../locales/en/messages";
@@ -15,6 +16,7 @@ export default () => {
   return (
     <I18nProvider language="en" catalogs={{ en: catalogEN, es: catalogES }}>
       <Layout>
+        
         <Box>
           <h2>
             <Trans>Robots (summer 2015)</Trans>

@@ -4,6 +4,7 @@ import Layout from "../components/layout.es";
 import Box from "../components/box";
 import usePosts from "../hooks/use-posts";
 import PostPreview from "../components/post-preview";
+import Hero from "../components/hero";
 import { Trans } from "@lingui/macro";
 import { I18nProvider } from "@lingui/react";
 import catalogEN from "../locales/en/messages";
@@ -14,6 +15,7 @@ export default () => {
 
   return (
     <I18nProvider language="es" catalogs={{ en: catalogEN, es: catalogES }}>
+      <Hero/>
       <Layout>
         <Box>
           <h2>
@@ -28,7 +30,7 @@ export default () => {
           </Trans></p>
           <p><Trans>
             We are working on the logistic, evaluating material, creating
-            activities, organizing the project's timeline, selecting mentors,
+            activities, organizing the projects timeline, selecting mentors,
             and getting sponsorship.
           </Trans></p>
         </Box>

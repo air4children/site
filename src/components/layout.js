@@ -2,7 +2,7 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
 import Header from './header.en';
-import Footer from './footer.es';
+import Footer from './footer.en';
 import Hero from '../components/hero';
 import useSiteMetadata from '../hooks/use-sitemetadata'
 
@@ -19,7 +19,8 @@ const Layout = ({ children }) => {
 
                 html,
                 body {
-                    margin: 0;
+                  margin-top: 30px;
+
                     color: #555;
                     font-family: 'Balsamiq Sans', cursive;
                     font-size: 20px;
