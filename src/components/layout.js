@@ -9,7 +9,7 @@ import { useStaticQuery, graphql } from "gatsby";
 var lang = "";
 var path = "";
 const defaultLanguage = "en";
-const prefix = lang => (lang === defaultLanguage ? "/" : "/" + lang);
+const prefix = lang => (lang === defaultLanguage ? "/" : "/" + lang + "/");
 const deprefix = pathname =>
   pathname.startsWith("/es/") ? pathname.substr(4) : pathname;
 
@@ -46,13 +46,15 @@ const Layout = ({ children, location }) => {
 
           html,
           body {
-            margin-top: 30px;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
 
             color: #555;
             font-family: "Balsamiq Sans", cursive;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.8;
-            word-spacing: 4px;
+            word-spacing: 1px;
 
             > div {
               margin-top: 0;

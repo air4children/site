@@ -74,7 +74,7 @@ const Header = props => {
   return (
     <header
       css={css`
-        background: #ffff7e;
+        background: #ffffff;
         display: flex;
         justify-content: space-between;
         padding: 0.5rem calc((100vw - 1300px - 0.5rem) / 2);
@@ -83,7 +83,7 @@ const Header = props => {
         -moz-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.75);
 
-        position: fixed; /* Set the navbar to fixed position */
+        position: sticky; /* Set the navbar to fixed position */
         top: 0; /* Position the navbar at the bottom of the page */
         width: 100%; /* Full width */
       `}
