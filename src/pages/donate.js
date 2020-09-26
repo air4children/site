@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout";
+import { Trans } from "@lingui/macro";
+import { LocalizedLink } from "gatsby-theme-i18n";
 
-export default () => (
-  <Layout>
-    <h1>Donate</h1>
-    <p>can donate here</p>
-    <Link to="/">&larr; back to home</Link>
+export default ({ location }) => (
+  <Layout location={location.pathname}>
+    <h1><Trans>Donate</Trans></h1>
+    <p><Trans>can donate here</Trans></p>
+    <LocalizedLink to="/">&larr; <Trans>back to home</Trans></LocalizedLink>
   </Layout>
 );
