@@ -1,81 +1,114 @@
-import React from 'react';
-import { Global, css } from '@emotion/core';
-import Helmet from 'react-helmet';
-import Header from './header.en';
-import Footer from './footer.en';
-import Hero from '../components/hero';
-import useSiteMetadata from '../hooks/use-sitemetadata'
+import React from "react";
+import { Global, css } from "@emotion/core";
+import Header from "./header";
+import Footer from "./footer";
+import PropTypes from "prop-types";
+import { navigate } from "gatsby-link";
+import { useStaticQuery, graphql } from "gatsby";
 
-const Layout = ({ children }) => {
-    const { title, description } =  useSiteMetadata();
-    return (
-        <>
-            <Global
-                styles = {css`
-                * {
-                    box-sizing: border-box;
-                }
+var lang = "";
+var path = "";
+const defaultLanguage = "en";
+const prefix = lang => (lang === defaultLanguage ? "/" : "/" + lang);
+const deprefix = pathname =>
+  pathname.startsWith("/es/") ? pathname.substr(4) : pathname;
 
+/** This function prepares language variables. */
+const prepareVars = pathname => {
+  lang = pathname.startsWith("/es/") ? "es" : "en";
+  path = pathname;
+};
 
-                html,
-                body {
-                  margin-top: 30px;
+/** This function sets the language path page when language change. */
+const onLangChange = lang => {
+  navigate(prefix(lang) + deprefix(path));
+};
 
-                    color: #555;
-                    font-family: 'Balsamiq Sans', cursive;
-                    font-size: 20px;
-                    line-height: 1.8;
-                    word-spacing: 4px;
+const Layout = ({ children, location }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
 
+  return (
+    <>
+      {prepareVars(location)}
+      <Global
+        styles={css`
+          * {
+            box-sizing: border-box;
+          }
 
-                    > div {
-                        margin-top:0;
-                    }
+          html,
+          body {
+            margin-top: 30px;
 
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6 {
-                        color: #222;
-                        line-height: 1.1;
+            color: #555;
+            font-family: "Balsamiq Sans", cursive;
+            font-size: 20px;
+            line-height: 1.8;
+            word-spacing: 4px;
 
-                        + * {
-                            margin-top: 0.5rem;
-                        }
-                    }
+            > div {
+              margin-top: 0;
+            }
 
-                    strong {
-                        color: #222;
-                    }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              color: #222;
+              line-height: 1.1;
 
-                    li {
-                        margin-top: 0.25rem;
+              + * {
+                margin-top: 0.5rem;
+              }
+            }
 
-                    }
-                }
-                `}
-            />
-            <Helmet>
+            strong {
+              color: #222;
+            }
+
+            li {
+              margin-top: 0.25rem;
+            }
+          }
+        `}
+      />
+      {/* <Helmet>
                 <html lang='en'/>
                 <title> {title} </title>
                 <meta name="description" content={description}/>
-            </Helmet>
-            <Header />
+            </Helmet> */}
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        lang={lang}
+        onLangClick={onLangChange}
+      />
 
-            <main
-                css={css`
-                    margin: 2rem auto 4rem;
-                    max-width: 90vw;
-                    width: 950px;
-                `}
-            >
-            {children}
-            </main>
-            <Footer />
-        </>
-    );
-}
+      <main
+        css={css`
+          margin: 2rem auto 4rem;
+          max-width: 90vw;
+          width: 950px;
+        `}
+      >
+        {children}
+      </main>
+      <Footer />
+    </>
+  );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 export default Layout;

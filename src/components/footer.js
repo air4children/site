@@ -55,7 +55,7 @@ const Footer = () => {
         `}
       >
         <Link
-          to="/en/"
+          to="/"
           css={css`
             margin: 0.5rem 1rem 0 0;
             width: 20%;
@@ -73,7 +73,7 @@ const Footer = () => {
         </Link>
 
         <div>
-          <NavLink to="/en/" fontWeight="bold">
+          <NavLink to="/" fontWeight="bold">
             {" "}
             Air4Children{" "}
           </NavLink>

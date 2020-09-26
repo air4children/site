@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://gatsby-theme-i18n-lingui.netlif.app",
     title: "Air4children",
     description:
-      "Project for developing ia and robotics in tlaxcala communities"
+      "Project for developing ia and robotics in tlaxcala communities",
+    author: `@gatsbyjs`
   },
-  pathPrefix: "/site",
+  // pathPrefix: "/site",
   plugins: [
     "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
@@ -37,6 +39,18 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
@@ -51,6 +65,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-webpack-bundle-analyzer",
       options: {
         production: true,
@@ -59,12 +80,26 @@ module.exports = {
         analizeMode: "static"
       }
     },
+    // {
+    //   resolve: "gatsby-plugin-i18n",
+    //   options: {
+    //     langKeyDefault: "en",
+    //     useLangKeyLayout: false,
+    //     configPath: require.resolve("./src/locales/config.json"),
+    //   }
+    // },
     {
-      resolve: "gatsby-plugin-i18n",
+      resolve: `gatsby-theme-i18n`,
       options: {
-        langKeyDefault: "en",
-        useLangKeyLayout: false
-      }
+        defaultLang: `en`,
+        configPath: require.resolve(`./src/locales/config.json`),
+      },
+    },
+    {
+      resolve: "gatsby-theme-i18n-lingui",
+      options: {
+        localeDir: "./src/locales",
+      },
     },
     {
       resolve: "gatsby-transformer-remark",

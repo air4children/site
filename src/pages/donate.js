@@ -4,8 +4,8 @@ import Layout from "../components/layout";
 
 export default () => (
   <Layout>
-    <h1>the page recuested does not exist</h1>
-
+    <h1>Donate</h1>
+    <p>can donate here</p>
     <Link to="/">&larr; back to home</Link>
   </Layout>
 );
