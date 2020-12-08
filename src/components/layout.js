@@ -5,6 +5,7 @@ import Footer from "./footer";
 import PropTypes from "prop-types";
 import { navigate } from "gatsby-link";
 import { useStaticQuery, graphql } from "gatsby";
+import Featured from "./featured";
 
 var lang = "";
 var path = "";
@@ -23,6 +24,14 @@ const prepareVars = pathname => {
 const onLangChange = lang => {
   navigate(prefix(lang) + deprefix(path));
 };
+
+/**  */
+const featured = pathname => {
+  if(pathname === '/' || pathname === '/es/'){
+    return new Featured;
+  }
+};
+
 
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
@@ -51,8 +60,8 @@ const Layout = ({ children, location }) => {
             margin-right: 0;
 
             color: #555;
-            font-family: "Balsamiq Sans", cursive;
-            font-size: 18px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 500;
             line-height: 1.8;
             word-spacing: 1px;
 
@@ -85,16 +94,18 @@ const Layout = ({ children, location }) => {
         `}
       />
       {/* <Helmet>
-                <html lang='en'/>
-                <title> {title} </title>
-                <meta name="description" content={description}/>
-            </Helmet> */}
+        <html lang='en'/>
+        <title> {title} </title>
+        <meta name="description" content={description}/>
+      </Helmet> */}
       <Header
         siteTitle={data.site.siteMetadata?.title || `Title`}
         lang={lang}
         onLangClick={onLangChange}
       />
 
+      {featured(location)}
+      
       <main
         css={css`
           margin: 2rem auto 4rem;
