@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
+import Paper from '@material-ui/core/Paper';
 
-const TextBox = styled("div")`
+const TextBox = styled(Paper)`
   #background-image: linear-gradient(to top, #ddbbffdd 2rem, #ffffff);
   #background: #1f4f73;
-  border: 6px solid #708ca1;
+  
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   padding: 20px;

@@ -28,7 +28,7 @@ const onLangChange = lang => {
 /**  */
 const featured = pathname => {
   if(pathname === '/' || pathname === '/es/'){
-    return new Featured;
+    return new Featured();
   }
 };
 
@@ -58,7 +58,7 @@ const Layout = ({ children, location }) => {
             margin-top: 0;
             margin-left: 0;
             margin-right: 0;
-
+            background-color: #F8F8FF;
             color: #555;
             font-family: Helvetica, Arial, sans-serif;
             font-size: 500;
