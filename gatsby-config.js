@@ -14,6 +14,8 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-remark",
     "gatsby-remark-embed-youtube",
+    "gatsby-plugin-material-ui",
+    "gatsby-plugin-antd",
     {
       resolve: "gatsby-plugin-mdx",
       options: {
