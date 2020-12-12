@@ -57,6 +57,12 @@ Done!
 1. `npm i gatsby-plugin-webpack-bundle-analyzer`
 1. `npm install gh-pages --save-dev`
 
+➜ npm install @material-ui/styles      
+➜ npm install @material-ui/core  
+➜ npm install gatsby-plugin-material-ui
+➜ npm install @material-ui/icons
+➜ npm install antd
+➜ npm install gatsby-plugin-antd
 
 ### Website color code
 
