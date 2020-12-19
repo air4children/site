@@ -14,8 +14,24 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/components/header.js:115
-msgid "About"
-msgstr "Acerca"
+#~ msgid "About"
+#~ msgstr "Acerca"
+
+#: src/components/header.js:166
+msgid "About us"
+msgstr "Nosotros"
+
+#: src/components/header.js:128
+msgid "Age 12-15"
+msgstr ""
+
+#: src/components/header.js:116
+msgid "Age 5-8"
+msgstr ""
+
+#: src/components/header.js:121
+msgid "Age 9-12"
+msgstr ""
 
 #: src/components/header.en.js:57
 #: src/components/header.es.js:57
@@ -26,16 +42,21 @@ msgstr "Acerca"
 #~ msgid "Also, you can create an issue in any of the repositories in  https://github.com/air4children."
 #~ msgstr "También puedes crear un `ìssue` en nuestro repositorio de github https://github.com/air4children"
 
-#: src/pages/contact.js:22
+#: src/pages/contact.js:107
+#: src/pages/programs.js:54
 msgid "Also, you can create an issue in any of the repositories in https://github.com/air4children."
 msgstr ""
 
-#: src/components/header.js:124
-#: src/pages/contact.js:10
+#: src/components/header.js:171
+msgid "Contact"
+msgstr ""
+
+#: src/pages/contact.js:38
 msgid "Contact Us"
 msgstr "Contacto"
 
-#: src/components/header.js:154
+#: src/components/header.js:197
+#: src/pages/donate.js:29
 msgid "Donate"
 msgstr "Donaciones"
 
@@ -47,9 +68,14 @@ msgstr "Donaciones"
 msgid "For further information, you can read the complete documentation at"
 msgstr "Para mayor informacion, puedes leer la documentacion completa: "
 
-#: src/pages/contact.js:14
+#: src/pages/contact.js:42
+#: src/pages/programs.js:46
 msgid "If you have any questions about becoming a collaborator, volunteer, mentor, sponsor, or anything else, do not hesitate to mail us to `robotics.libre@gmail.com`."
 msgstr "Si tu tienes alguna pregunta acerca de cómo convertirte en colaborador, voluntario, mentor, "
+
+#: src/pages/contact.js:50
+msgid "It can also be helpul to fill the following form in order to send us a mail."
+msgstr ""
 
 #: src/pages/about.js:73
 msgid "Libre software offers scientists the possibility of sharing with their peers how they have solved problems. This, of course is basic for the evolution of science; but libre software goes beyond that and makes this happen in a cost-effective way.*"
@@ -60,40 +86,72 @@ msgstr ""
 #~ msgstr "Conoce al equipo"
 
 #: src/pages/index.js:36
-msgid "Most recent new from air4children"
-msgstr "Noticias más recientes de air4children"
-
-#: src/pages/index.es.js:36
-#~ msgid "Most recent news from air4children"
+#~ msgid "Most recent new from air4children"
 #~ msgstr "Noticias más recientes de air4children"
 
-#: src/pages/index.js:18
+#: src/pages/index.js:58
+msgid "Most recent news from air4children"
+msgstr "Noticias más recientes de air4children"
+
+#: src/pages/index.js:29
 msgid "Our aim is to create the first Summer Workshop in 2015 of LibrE Robotics in Xicohtzinco, Tlaxcala, Mexico. Children between 10 and 15 years old will be invited to participate in a week full of activities that are going to be thoughtfully designed for finding delightfulness in the robotics field."
 msgstr "Nuestro principal objetivo es crear el primer taller de verano de robotica libre en Xicohtzinco, Tlaxcala, México. Niños entre 10 y 15 años seran invitados a participar a una semana completa de actividades que sera completamente diseñadas para despertar el interes de la robotica."
+
+#: src/pages/programs.js:42
+msgid "Programs"
+msgstr ""
+
+#: src/components/header.js:135
+msgid "Publications"
+msgstr ""
 
 #: src/pages/about.js:87
 msgid "References:"
 msgstr "Referencias: "
 
-#: src/pages/index.js:15
+#: src/pages/index.js:26
 msgid "Robots (summer 2015)"
 msgstr "Cocinando Robots (Verano 2015)"
 
+#: src/components/header.js:176
+msgid "The team"
+msgstr ""
+
 #: src/components/header.js:118
-msgid "Videos"
-msgstr "Videos"
+#~ msgid "Videos"
+#~ msgstr "Videos"
+
+#: src/components/header.js:145
+msgid "Volunteer"
+msgstr ""
+
+#: src/components/header.js:155
+msgid "Volunteer Application"
+msgstr ""
+
+#: src/components/header.js:150
+msgid "Volunteer FAQs"
+msgstr ""
 
 #: src/components/header.js:121
-msgid "Volunteering"
-msgstr "Voluntariado"
+#~ msgid "Volunteering"
+#~ msgstr "Voluntariado"
 
-#: src/pages/index.js:27
+#: src/pages/index.js:38
 msgid "We are working on the logistic, evaluating material, creating activities, organizing the project's timeline, selecting mentors, and getting sponsorship."
 msgstr "Estamos trabajando en la logistica, evaluando material, creando actividades, organizando el cronograma del proyecto, asi como seleccionando a los mentores y consiguiendo patrocinadores."
+
+#: src/pages/donate.js:30
+msgid "We offer fun literacy programs for kids in Xicohtzinco and volunteer opportunities for literacy lovers who want to see kids thrive."
+msgstr ""
 
 #: src/pages/about.js:9
 msgid "What is air4children ?"
 msgstr "¿Qué es air4children?"
+
+#: src/components/header.js:97
+msgid "air4children"
+msgstr ""
 
 #: src/pages/about.js:13
 msgid "air4children is inspired by KHAN academy which is a non-profit organization with the goal of changing education for the better. In the same fashion, LibrE Robotics has also been thought to be a non-profit organization in which the main goals are fivefold:"
@@ -101,12 +159,11 @@ msgstr ""
 
 #: src/pages/about.js:59
 msgid "air4children will provide software and hardware for educational robots that are extremely reliable (robust), modifiable, and very cheap in order to be accessible to anyone and to enable a much more rapid development of the community. In addition to that, **air4children** has been adopted the philosophy of free software foundation, since free and open-source software and hardware licences state that anyone is freely licensed to use, copy, study and change in any way, and the source code is openly shared so that users are encouraged to voluntarily improve the design of the software. Meyer said:"
-msgstr ""
+msgstr "air4children proveera el software y el hardware para robotica educacional"
 
-#: src/pages/blog.es.js:20
-#: src/pages/donate.es.js:14
-#~ msgid "back to home"
-#~ msgstr "regresar al inicio"
+#: src/pages/donate.js:31
+msgid "back to home"
+msgstr "regresar al inicio"
 
 #: src/pages/donate.es.js:13
 #~ msgid "can donate here"

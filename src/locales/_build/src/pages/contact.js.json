@@ -3,7 +3,7 @@
     "origin": [
       [
         "src/pages/contact.js",
-        10
+        38
       ]
     ]
   },
@@ -11,7 +11,15 @@
     "origin": [
       [
         "src/pages/contact.js",
-        14
+        42
+      ]
+    ]
+  },
+  "It can also be helpul to fill the following form in order to send us a mail.": {
+    "origin": [
+      [
+        "src/pages/contact.js",
+        50
       ]
     ]
   },
@@ -19,7 +27,7 @@
     "origin": [
       [
         "src/pages/contact.js",
-        22
+        107
       ]
     ]
   }

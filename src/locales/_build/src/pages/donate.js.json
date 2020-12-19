@@ -1,0 +1,26 @@
+{
+  "Donate": {
+    "origin": [
+      [
+        "src/pages/donate.js",
+        29
+      ]
+    ]
+  },
+  "We offer fun literacy programs for kids in Xicohtzinco and volunteer opportunities for literacy lovers who want to see kids thrive.": {
+    "origin": [
+      [
+        "src/pages/donate.js",
+        30
+      ]
+    ]
+  },
+  "back to home": {
+    "origin": [
+      [
+        "src/pages/donate.js",
+        31
+      ]
+    ]
+  }
+}
