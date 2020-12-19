@@ -51,21 +51,15 @@ Done!
 ```
 
 ### Gatsby plugins
-1. `npm i gatsby-transformer-sharp gatsby-plugin-sharp gatsby-background-image`
+1. `npm i gatsby-transformer-sharp`
+1. `gatsby-plugin-sharp gatsby-background-image`
 1. `npm i gatsby-image`
 1. `npm i gatsby-remark-images`
 1. `npm i gatsby-plugin-webpack-bundle-analyzer`
 1. `npm install gh-pages --save-dev`
-
-➜ npm install @material-ui/styles      
-➜ npm install @material-ui/core  
-➜ npm install gatsby-plugin-material-ui
-➜ npm install @material-ui/icons
-➜ npm install antd
-➜ npm install gatsby-plugin-antd
-
-### Website color code
-
-Here's an image of the scheme color used in this website:
-
-![color scheme](.docs/color_code.png)
+1. `npm install @material-ui/styles`
+1. `npm install @material-ui/core`
+1. `npm install gatsby-plugin-material-ui`
+1. `npm install @material-ui/icons`
+1. `npm install antd`
+1. `npm install gatsby-plugin-antd`
