@@ -8,12 +8,22 @@ This website made usage of [Node.js](https://nodejs.org/en/), npm and [Gatsby.js
 1. Have a linux distribution. These instructions work fine for Ubuntu 20.04 but for Windows or Mac it should be the same with slight variations when installing the prerequisites
 1. Install `node` and `npm`
   * `sudo apt install npm`
-  * `npm -v` or `npm –version`
+  * `npm -v` or `npm –version` or the following bash steps: 
+
+```
+$ curl -sL https://deb.nodesource.com/setup_15.x -o nodesource_setup.sh #ubuntu-20-04
+$ sudo bash nodesource_setup.sh
+$ sudo apt install -y nodejs
+$ node -v # v15.5.0 in ubuntu-20-04
+$ npm -v  # v7.3.0  in ubuntu-20-04
+```
+
 1. Install Gatsby CLI (gatsby-cli) installed globally by running:
    `npm install -g gatsby-cli`
 1. Clone this repository   
    `git clone https://github.com/air4children/site`
 1. Your favorite text editor (e.g. [VSCode](https://code.visualstudio.com/) , [atom](https://atom.io), [pycharm](https://www.jetbrains.com/pycharm/), etc).
+1. If have problems during installation please check the [Troubleshooting]() section of this file
 
 ## Usage
 This is a Gatsby.js web development. In order to run this code you have to follow these instructions:
@@ -63,3 +73,27 @@ Done!
 1. `npm install @material-ui/icons`
 1. `npm install antd`
 1. `npm install gatsby-plugin-antd`
+
+
+## Troubleshooting 
+
+* When installing gatsby client:
+  * permission when installing gatsby with `npm install -g gatsby-cli` which were resolved with:
+
+```bash
+$ sudo chown -R $USER ~/.npm
+$ mkdir "${HOME}/.npm-packages"
+$ mkdir -p "${HOME}/.npm-packages/lib"
+$ npm config set prefix "${HOME}/.npm-packages"
+```
+
+Also set the bash references. Add the following to your `.bashrc` :
+
+```bash
+NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$PATH:$NPM_PACKAGES/bin"
+# Preserve MANPATH if you already defined it somewhere in your config.
+# Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
+# Reference: https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
+```bash
