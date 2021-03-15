@@ -1,0 +1,34 @@
+{
+  "Contact Us": {
+    "origin": [
+      [
+        "src/pages/contact.js",
+        38
+      ]
+    ]
+  },
+  "If you have any questions about becoming a collaborator, volunteer, mentor, sponsor, or anything else, do not hesitate to mail us to `robotics.libre@gmail.com`.": {
+    "origin": [
+      [
+        "src/pages/contact.js",
+        42
+      ]
+    ]
+  },
+  "It can also be helpul to fill the following form in order to send us a mail.": {
+    "origin": [
+      [
+        "src/pages/contact.js",
+        50
+      ]
+    ]
+  },
+  "Also, you can create an issue in any of the repositories in https://github.com/air4children.": {
+    "origin": [
+      [
+        "src/pages/contact.js",
+        107
+      ]
+    ]
+  }
+}

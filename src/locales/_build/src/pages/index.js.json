@@ -2,32 +2,32 @@
   "Robots (summer 2015)": {
     "origin": [
       [
-        "src/pages/index.es.js",
-        20
+        "src/pages/index.js",
+        26
       ]
     ]
   },
   "Our aim is to create the first Summer Workshop in 2015 of LibrE Robotics in Xicohtzinco, Tlaxcala, Mexico. Children between 10 and 15 years old will be invited to participate in a week full of activities that are going to be thoughtfully designed for finding delightfulness in the robotics field.": {
     "origin": [
       [
-        "src/pages/index.es.js",
-        22
+        "src/pages/index.js",
+        29
       ]
     ]
   },
   "We are working on the logistic, evaluating material, creating activities, organizing the project's timeline, selecting mentors, and getting sponsorship.": {
     "origin": [
       [
-        "src/pages/index.es.js",
-        29
+        "src/pages/index.js",
+        38
       ]
     ]
   },
   "Most recent news from air4children": {
     "origin": [
       [
-        "src/pages/index.es.js",
-        36
+        "src/pages/index.js",
+        58
       ]
     ]
   }

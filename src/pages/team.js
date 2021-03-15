@@ -1,43 +1,87 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { css } from '@emotion/core';
-import { Link } from 'gatsby';
-import Layout from '../components/layout';
+import React from "react";
+import Layout from "../components/layout";
+import { Card, Col, Row, Divider } from 'antd';
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image"
 
-const Team = () => (
-  <Layout>
-    <div
-        css={ css`
-            width: 600px;
-            height: 600px;
-            display: flex;
+export default ({ location }) => {
 
-            div {
-              border: 3px inset black;
-              border-radius: 15px;
-              background-color: #073046;
-              opacity: 0.5;
-            }
-            .a{
-              grid-row: 1/2;
-              grid-column: 1/1;
-            }
-            .b{
-              grid-row: 2/3-;
-              grid-column: 1/1;
-            }
-            .b{
-              grid-row: 3/4;
-              grid-column: 1/1;
-            }
-        ` }
-        >
-        <div class="a">A</div>
-        <div class="b">B</div>
-        <div class="c">C</div>
+  const { imagef, imagem } = useStaticQuery(graphql`
+    query {
+      imagem: file(relativePath: { eq: "user_male.png" }) {
+        sharp: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      imagef: file(relativePath: { eq: "user_female.png" }) {
+        sharp: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `);
 
-    </div>
-  </Layout>
-);
-
-export default Team;
+  return (
+    <Layout location={location.pathname}>
+       <div className="site-card-wrapper">
+        <Row gutter={16}>
+          <Col span={8}>
+            <Card 
+              title="User Name" 
+              bordered={false}
+              hoverable
+              cover={<Img objectFit="cover" Tag="section" fluid={imagef.sharp.fluid} fadeIn="soft"/>}
+            >
+              <Divider />
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card 
+                title="User Name 2" 
+                bordered={false}
+                hoverable
+                cover={<Img objectFit="cover" Tag="section" fluid={imagem.sharp.fluid} fadeIn="soft"/>}
+            >
+              <Divider />
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card title="Card title" bordered={false}>
+              Card content
+            </Card>
+          </Col>
+        </Row>
+        <Divider />
+        <Row gutter={16}>
+          <Col span={8}>
+            <Card 
+                title="User Name 2" 
+                bordered={false}
+                hoverable
+                cover={<Img objectFit="cover" Tag="section" fluid={imagem.sharp.fluid} fadeIn="soft"/>}
+            >
+              <Divider />
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card title="Card title" bordered={false}>
+              Card content
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card title="Card title" bordered={false}>
+              Card content
+            </Card>
+          </Col>
+        </Row>
+      </div>
+    </Layout>
+  );
+};
