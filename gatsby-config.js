@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `air-for-children-site`,
+    title: `Air for children site`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
@@ -15,5 +15,8 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  }],
+  
+  pathPrefix: "/site",
+  
 };
