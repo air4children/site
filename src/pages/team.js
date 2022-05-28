@@ -1,9 +1,9 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 
-const AboutPage = () => {
+const Team = () => {
   return (
-    <Layout pageTitle="About Us">
+    <Layout pageTitle="Meet the Team">
       <h1>
        What is air4children ?
       </h1>
@@ -70,4 +70,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default Team

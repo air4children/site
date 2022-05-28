@@ -1,60 +1,69 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { css } from '@emotion/core';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
+import { Navbar, Container, Nav, NavDropdown, Form, Button } from "react-bootstrap";
+import {
+    nav,
+    navLinkText
+  } from '../css/header.module.css'
 
-const NavLink = styled(Link)`
-    color: #222;
-    font-size: 1rem;
-    font-weight: ${props => props.fontWeight || 'normal'};
-    line-height: 1;
-    margin: 0 0.5rem 0 0;
-    padding: 0.25rem; 
-    text-decoration: none;
-
-    &.current-page {
-        border-bottom: 2px solid #222;
-    }
-
-    &:last-of-type{
-        margin-right: 0;
-    }
-`;
-
-const Header = () => (
-    <header
-        css={ css`
-            background: #eee;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5rem calc((100vw - 950px - 0.5rem)/2);
-        ` }
-        > 
-        <NavLink to="/" fontWeight="bold"> Libre Robotics</NavLink>
-
-        <nav css = { css`
-            margin-top: 0; 
-        ` }
-        >
-
-            <NavLink to="/" activeClassName="current-page">
-                Home
-            </NavLink>
-            <NavLink to="/about/" activeClassName="current-page">
-                About
-            </NavLink>
-            <NavLink to="/blog/" activeClassName="current-page">
-                Blog
-            </NavLink>
-            <NavLink to="/github" activeClassName="current-page">
-                Github
-            </NavLink>
-            <NavLink to="/donate/" activeClassName="current-page">
-                Donate
-            </NavLink>
-        </nav>
+const Header = () => {
+  return (
+    <header>
+        <Navbar expand="lg" variant="light" bg="light" className={nav}>
+            <Container>
+                <Navbar.Brand>
+                    <Link to="/" className={navLinkText}>
+                        air-4-children
+                    </Link>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav>
+                        <Nav.Link>
+                            <Link to="/about" className={navLinkText}>
+                                About
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/workshops" className={navLinkText}>
+                                Workshops
+                            </Link>
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+                <Navbar.Collapse className="justify-content-end">
+                    <NavDropdown title="Actions" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">
+                            <Link to="/volunteering" className={navLinkText}>
+                                Volunteering
+                            </Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item>
+                            <Link to="/team" className={navLinkText}>
+                                Team
+                            </Link>
+                        </NavDropdown.Item>
+                        {/* <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">Xicohtzinco</NavDropdown.Item> */}
+                    </NavDropdown>
+                    <Form className="d-flex">
+                        <Button variant="outline-success">
+                            <Link to="/donations" className={navLinkText}>
+                                Donate
+                            </Link>
+                        </Button>
+                    </Form>
+                    {/* <NavDropdown title="lang" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Spanish</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">French</NavDropdown.Item>
+                    </NavDropdown> */}
+                </Navbar.Collapse>
+                
+            </Container>
+        </Navbar>
     </header>
-);
+  );
+};
 
 export default Header;

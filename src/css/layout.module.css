@@ -1,0 +1,37 @@
+.heading {
+    color: rebeccapurple;
+    text-align: center
+  }
+.html {
+    --stripe: #cfd8dc;
+    --bg: #e1e1e1;
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+}
+
+.body {
+    min-height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.card-body {
+    min-height: 100vh;
+    border-radius: 5px;
+    padding: 50px;
+    background-color: white;
+    box-shadow:
+       inset 0 -1em 1em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.1em 0.1em 1em rgba(0,0,0,0.3);
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
