@@ -1,14 +1,14 @@
 {
-  "name": "air-for-children-site",
+  "name": "air-4-children",
   "version": "1.0.0",
   "private": true,
-  "description": "air-for-children-site",
-  "author": "Angel Mandujano",
+  "description": "This is a site for air for children project",
+  "author": "air4children team",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
